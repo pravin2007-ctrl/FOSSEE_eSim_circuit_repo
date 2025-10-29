@@ -1,0 +1,73 @@
+* Subcircuit BA10339F
+.subckt BA10339F net-_q16-pad1_ net-_q15-pad1_ net-_i1-pad2_ net-_d6-pad1_ net-_d1-pad1_ net-_d8-pad1_ net-_d2-pad1_ net-_d14-pad1_ net-_d9-pad1_ net-_d16-pad1_ net-_d11-pad1_ gnd net-_q32-pad1_ net-_q30-pad1_ 
+.title kicad schematic
+.include PNP.lib
+.include D.lib
+.include NPN.lib
+d12 net-_d12-pad1_ net-_d11-pad2_ 1N4148
+i12 net-_i12-pad1_ net-_i1-pad2_  dc 2mA
+i15 net-_d15-pad1_ net-_i1-pad2_  dc 2mA
+i16 net-_i16-pad1_ net-_i1-pad2_  dc 2mA
+d15 net-_d15-pad1_ net-_d15-pad2_ 1N4148
+d16 net-_d16-pad1_ net-_d15-pad2_ 1N4148
+q29 gnd net-_d16-pad1_ net-_d15-pad2_ Q2N2907A
+q27 net-_q25-pad1_ net-_d15-pad2_ net-_i12-pad1_ Q2N2907A
+q21 net-_q21-pad1_ net-_d11-pad2_ net-_i12-pad1_ Q2N2907A
+q22 net-_q21-pad1_ net-_q21-pad1_ gnd Q2N2222
+q19 gnd net-_d11-pad1_ net-_d11-pad2_ Q2N2907A
+i10 net-_d12-pad1_ net-_i1-pad2_  dc 2mA
+d11 net-_d11-pad1_ net-_d11-pad2_ 1N4148
+q30 net-_q30-pad1_ net-_i14-pad1_ gnd Q2N2222
+q28 net-_i14-pad1_ net-_q23-pad1_ gnd Q2N2222
+q23 net-_q23-pad1_ net-_q18-pad1_ gnd Q2N2222
+q20 net-_q18-pad1_ net-_q18-pad1_ gnd Q2N2222
+q32 net-_q32-pad1_ net-_i16-pad1_ gnd Q2N2222
+q25 net-_q25-pad1_ net-_q21-pad1_ gnd Q2N2222
+q31 net-_i16-pad1_ net-_q25-pad1_ gnd Q2N2222
+q26 gnd net-_d14-pad1_ net-_d13-pad2_ Q2N2907A
+d14 net-_d14-pad1_ net-_d13-pad2_ 1N4148
+d13 net-_d13-pad1_ net-_d13-pad2_ 1N4148
+i14 net-_i14-pad1_ net-_i1-pad2_  dc 2mA
+i13 net-_d13-pad1_ net-_i1-pad2_  dc 2mA
+i11 net-_i11-pad1_ net-_i1-pad2_  dc 2mA
+q24 net-_q23-pad1_ net-_d13-pad2_ net-_i11-pad1_ Q2N2907A
+q18 net-_q18-pad1_ net-_d10-pad2_ net-_i11-pad1_ Q2N2907A
+q17 gnd net-_d9-pad1_ net-_d10-pad2_ Q2N2907A
+d10 net-_d10-pad1_ net-_d10-pad2_ 1N4148
+d9 net-_d9-pad1_ net-_d10-pad2_ 1N4148
+i9 net-_d10-pad1_ net-_i1-pad2_  dc 2mA
+i6 net-_d7-pad1_ net-_i1-pad2_  dc 2mA
+i8 net-_i8-pad1_ net-_i1-pad2_  dc 2mA
+d7 net-_d7-pad1_ net-_d7-pad2_ 1N4148
+i4 net-_i4-pad1_ net-_i1-pad2_  dc 2mA
+i2 net-_d4-pad1_ net-_i1-pad2_  dc 2mA
+d4 net-_d4-pad1_ net-_d2-pad2_ 1N4148
+d1 net-_d1-pad1_ net-_d1-pad2_ 1N4148
+q3 net-_q3-pad1_ net-_d1-pad2_ net-_i3-pad1_ Q2N2907A
+q8 net-_q12-pad2_ net-_d5-pad2_ net-_i3-pad1_ Q2N2907A
+d3 net-_d3-pad1_ net-_d1-pad2_ 1N4148
+i3 net-_i3-pad1_ net-_i1-pad2_  dc 2mA
+i1 net-_d3-pad1_ net-_i1-pad2_  dc 2mA
+q11 gnd net-_d6-pad1_ net-_d5-pad2_ Q2N2907A
+q1 gnd net-_d1-pad1_ net-_d1-pad2_ Q2N2907A
+q7 net-_q12-pad2_ net-_q3-pad1_ gnd Q2N2222
+q4 net-_q3-pad1_ net-_q3-pad1_ gnd Q2N2222
+d6 net-_d6-pad1_ net-_d5-pad2_ 1N4148
+i7 net-_i7-pad1_ net-_i1-pad2_  dc 2mA
+i5 net-_d5-pad1_ net-_i1-pad2_  dc 2mA
+d5 net-_d5-pad1_ net-_d5-pad2_ 1N4148
+q12 net-_i7-pad1_ net-_q12-pad2_ gnd Q2N2907A
+q15 net-_q15-pad1_ net-_i7-pad1_ gnd Q2N2222
+q9 net-_q10-pad1_ net-_q5-pad1_ gnd Q2N2222
+q6 net-_q5-pad1_ net-_q5-pad1_ gnd Q2N2222
+q2 gnd net-_d2-pad1_ net-_d2-pad2_ Q2N2907A
+q10 net-_q10-pad1_ net-_d7-pad2_ net-_i4-pad1_ Q2N2907A
+q5 net-_q5-pad1_ net-_d2-pad2_ net-_i4-pad1_ Q2N2907A
+d2 net-_d2-pad1_ net-_d2-pad2_ 1N4148
+q13 gnd net-_d8-pad1_ net-_d7-pad2_ Q2N2222
+d8 net-_d8-pad1_ net-_d7-pad2_ 1N4148
+q14 net-_i8-pad1_ net-_q10-pad1_ gnd Q2N2222
+q16 net-_q16-pad1_ net-_i8-pad1_ gnd Q2N2222
+* Control Statements
+
+.ends BA10339F
