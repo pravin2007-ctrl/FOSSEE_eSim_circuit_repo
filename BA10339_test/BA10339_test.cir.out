@@ -1,0 +1,18 @@
+.title kicad schematic
+
+.include BA10339_s.sub
+r2 out1 net-_r2-pad2_ 10k
+v1 net-_r2-pad2_ gnd  dc 15v
+v2 in gnd sine(7.5v 1v 50 0 0)
+* u2 out1 plot_v1
+x1 unconnected-_x1-pad1_ out1 net-_r2-pad2_ in gnd unconnected-_x1-pad6_ unconnected-_x1-pad7_ unconnected-_x1-pad8_ unconnected-_x1-pad9_ unconnected-_x1-pad10_ unconnected-_x1-pad11_ gnd unconnected-_x1-pad13_ unconnected-_x1-pad14_ BA10339_s
+.tran 0.1e-03 50e-03 0e-03
+
+* Control Statements 
+.control
+run
+print allv > plot_data_v.txt
+print alli > plot_data_i.txt
+plot v(out1)
+.endc
+.end
