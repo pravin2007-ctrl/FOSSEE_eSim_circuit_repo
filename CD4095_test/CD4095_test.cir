@@ -1,0 +1,16 @@
+.title KiCad schematic
+X1 unconnected-_X1-Pad1_ Net-_U4-Pad10_ Net-_U4-Pad7_ Net-_U4-Pad7_ Net-_U4-Pad7_ Net-_U5-Pad1_ Net-_U4-Pad10_ Net-_U5-Pad2_ Net-_U4-Pad8_ Net-_U4-Pad8_ Net-_U4-Pad8_ Net-_U4-Pad6_ Net-_U4-Pad10_ Net-_U4-Pad9_ CD4095
+U4 clock j k Net-_U4-Pad4_ GND Net-_U4-Pad6_ Net-_U4-Pad7_ Net-_U4-Pad8_ Net-_U4-Pad9_ Net-_U4-Pad10_ adc_bridge_5
+U6 Q plot_v1
+U7 Q' plot_v1
+R2 Q' GND 1k
+R1 Q GND 1k
+U5 Net-_U5-Pad1_ Net-_U5-Pad2_ Q' Q dac_bridge_2
+v1 clock GND pulse
+v2 j GND DC
+v3 k GND DC
+v4 Net-_U4-Pad4_ GND DC
+U3 k plot_v1
+U1 clock plot_v1
+U2 j plot_v1
+.end
